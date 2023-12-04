@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events And Activities Calender</title>
+    <link rel="stylesheet" href="evo-calendar.min.css">
+    <link rel="stylesheet" href="evo-calendar.royal-navy.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="hero">
+    <div id="calendar"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="evo-calendar.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#calendar').evoCalendar({
+            
+    calendarEvents: [
+      {
+        id: 'event1', // Event's ID (required)
+        name: "New Year", // Event name (required)
+        date: "January/1/2020", // Event date (required)
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event2',
+        name: "Vacation Leave",
+        badge: "01/08 - 01/19", // Event badge (optional)
+        date: ["January/08/2023", "January/19/2023"], // Date range
+        description: "Vacation leave for 11 days.", // Event description (optional)
+        type: "event",
+        color: "#63d867" // Event custom color (optional)
+      },
+    {
+      id: 'event3',
+      name: "My Birthday",
+      date: "April/30/2023",
+      type: "birthday",
+      everyYear: true
+    },
+    {
+      id: 'event4',
+      name: "Republic Day",
+      date: "January/26/2023",
+      type: "National Holiday",
+      everyYear: true
+    },
+    {
+      id: 'event5',
+      name: "Maha Shivratri",
+      date: "February/18/2023",
+      type: "National Holiday",
+      everyYear: true
+    },
+    {
+      id: 'event8',
+      name: "Holi",
+      date: "March/08/2023",
+      type: "National Holiday",
+      everyYear: true
+    },
+    {
+      id: 'event6',
+      name: "Independence Day",
+      date: "August/15/2023",
+      type: "National Holiday",
+      everyYear: true
+    },
+    {
+      id: 'event7',
+      name: "Ram Navami",
+      date: "March/30/2023",
+      type: "National Holiday",
+      everyYear: true
+    },
+    {
+      id: 'event8',
+      name: "Mahavir Jayanti",
+      date: "April/04/2023",
+      type: "National Holiday",
+      everyYear: true,
+      color: "red",
+    },
+    {
+      id: 'event9',
+      name: "Good Friday",
+      date: "April/07/2023",
+      type: "National Holiday",
+      everyYear: true,
+    },
+    {
+      id: 'event10',
+      name: "Ravindra Jayanti",
+      date: "May/09/2023",
+      type: "National Holiday",
+      everyYear: true,
+      color: "Pink",
+    },
+    {
+      id: 'event11',
+      name: "Budha Purnima",
+      date: "March/05/2023",
+      type: "National Holiday",
+      everyYear: true,
+      color: "red",
+    },
+    {
+      id: 'event12',
+      name: "onam",
+      date: "August/29/2023",
+      type: "National Holiday",
+      everyYear: true,
+      color: "red",
+    },
+    {
+      id: 'event13',
+      name: "Rakhsha Bandhan",
+      date: "August/30/2023",
+      type: "National Holiday",
+      everyYear: true,
+      color: "blue",
+    },
+    {
+      id: 'event14',
+      name: "Janmasthami",
+      date: "September/07/2023",
+      type: "National Holiday",
+      everyYear: true,
+      color: "red",
+    },
+    {
+      id: 'event15',
+      name: "Ganesh Chaturthi",
+      date: "September/19/2023",
+      type: "National Holiday",
+      everyYear: true,
+      color: "red",
+    },
+    {
+      id: 'event16',
+      name: "Gandhi Jayanti",
+      date: "October/02/2023",
+      type: "National Holiday",
+      everyYear: true,
+      color: "red",
+    },
+    {
+      id: 'event17',
+      name: "Navratri",
+      date: "October/15/2023",
+      type: "National Holiday",
+      everyYear: true,
+      // color: "ai",
+    },
+    {
+      id: 'event17',
+      name: "Navratri",
+      date: "October/15/2023",
+      type: "National Holiday",
+      everyYear: true,
+      // color: "ai",
+    },
+    {
+      id: 'event18',
+      name: "Dussehra",
+      date: "October/24/2023",
+      type: "National Holiday",
+      everyYear: true,
+    },
+    {
+      id: 'event19',
+      name: "Diwali",
+      date: "November/12/2023",
+      type: "National Holiday",
+      everyYear: true,
+    },
+    {
+      id: 'event20',
+      name: "Bhai Duj",
+      date: "November/15/2023",
+      type: "National Holiday",
+      everyYear: true,
+    },
+    {
+      id: 'event21',
+      name: "Guru Nanak Jayanti",
+      date: "November/27/2023",
+      type: "National Holiday",
+      description:"Guru Nanak Jayanti, also known as Gurpurab, is the celebration of the birth anniversary of Guru Nanak Dev Ji, the founder of Sikhism. It is one of the most significant festivals for Sikhs and is observed with great enthusiasm and reverence. Guru Nanak Jayanti usually falls on the full moon day in the month of Kartik, which is typically in November.",
+      everyYear: true,
+    },
+    {
+      id: 'event22',
+      name: "Christman Eve",
+      date: "December/25/2023",
+      type: "National Holiday",
+      everyYear: true,
+    },
+    {
+      id: 'event23',
+      name: "Tech Titans",
+      date: "November/28/2023",
+      type: "Campus Events",
+      description:"Techical Event for CSE students",
+      // description: "TECHNICAL EVENT BASED ON PYTHON AND HTML CSS",
+      description:"TIMING:2-4PM PLACE:SHANTI DEVI MITTAL AUDITORIUM",
+      color:"pink",
+      // everyYear: true,
+    },
+    {
+      id: 'event24',
+      name: "Chess Trails",
+      date: "December/02/2023",
+      description:"Organised by Team 07",
+      type: "National Holiday",
+      everyYear: true,
+      color:"pink",
+    },
+    {
+      id: 'event25',
+      name: "Ritika's Birthday",
+      date: "August/24/2023",
+      type: "Birthday",
+      description:"",
+      everyYear: true,
+    },
+    // {
+    //   id: 'event26',
+    //   name: "",
+    //   date: "August/24/2023",
+    //   type: "Birthday",
+    //   description:"",
+    //   everyYear: true,
+    // },
+
+
+    ]
+     })
+
+        })
+    </script>
+</body>
+</html>
